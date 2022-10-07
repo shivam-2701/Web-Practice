@@ -8,8 +8,6 @@ img {
     width: 100%;
 }
 
-
-
 /*-----header-----*/
 
 #main-header {
@@ -46,14 +44,12 @@ img {
     margin-top: 50px;
 }
 
-
-
 /*-----main-----*/
 
 #content {
     margin-top: 80px;
     width: 100%;
-    height:100%;
+    height: 100%;
     border: 1px solid black;
 }
 
@@ -62,7 +58,6 @@ main {
     display: inline-block;
     /* margin-right: -5%; */
     /* margin-top: -2%; */
-    
 }
 
 #blog-header {
@@ -74,22 +69,36 @@ main {
     color: #13222c;
     font-family: sans-serif;
 }
-#author-container{
-    width:6%;
+
+#author-container {
+    width: 29%;
+
+    /* I had edited this before, but you said you had it under "control" 😑😑😑 */
+
+    /* border: 1px solid black; */
     display: inline-block;
-    margin-right:6%;
+    /* margin-right: 6%; */
     text-align: left;
-    vertical-align:top;
+    vertical-align: top;
     font-family: sans-serif;
     margin-bottom: 30px;
     /* visibility: hidden; */
     font-size: 1rem;
 }
-#author-container img{
-    width:75%;
+
+#author-container img {
+    width: 45%;
+    max-width: 60px;
+
+    /* In the answer, they have used absolute width for the image, that's why it doesn't exactly match */
+
+    margin-bottom: 1rem;
+    /* I'm addig this just 'cause... */
+
     border-radius: 50%;
 }
 
+/* You have no css for author name and its sibling, so I won't change anything */
 
 /*-----views-----*/
 
@@ -108,8 +117,6 @@ main {
     font-family: sans-serif;
 }
 
-
-
 /*-----blog content-----*/
 
 #blog-content {
@@ -117,7 +124,11 @@ main {
     font-size: 1.1rem;
     word-spacing: 1px;
     line-height: 1.4;
-    width: 75%;
+
+    /* I had edited this before, but you said you had it under "control" 😑😑😑 */
+
+    /* width: 75%; */
+    width: 70%;
 }
 
 #blog-content h4.h-style {
@@ -136,16 +147,19 @@ main {
     color: #000000;
 }
 
-
-
 /*-----aside-----*/
 
 aside {
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-}
+    /* width: 20%; */
+    width: 25%;
 
+    /* Needed some top margin */
+    margin-top: 3rem;
+    /* See earlier the image and aside were smooched together, a little bit of margin can do you good */
+    margin-left: 1.3rem;
+}
 
 .widget {
     width: 100%;
@@ -162,18 +176,31 @@ aside {
     color: #1a1a1a;
 }
 
-
 .widget .widget-title {
+    /*Most of the time you don't have to bother with line-height and such, if they are that important per se, you will be provided with a figma project for the same, then its just a matter of copying and pasting
+    */
+
+    text-transform: uppercase;
     letter-spacing: 0.05rem;
-    font-size: 1.6rem;
-    word-spacing: 0.1rem;
-    font-weight: bolder;
-    line-height: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 1.6rem; */
+    font-size: 1.1rem;
+    width: 100%;
+    /* word-spacing: 0.1rem; */
+    /* font-weight: bolder; */
+    font-weight: bold;
+    /* line-height: 2rem; */
+    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+
+    /* The font-family Franklin something something doesn't have well-defined font-weights as you will see is a case with many font-families that you get from google fonts, changing it to something standard typically works */
+
+    font-family: sans-serif;
 }
-.widget p,.widget li{
+
+.widget p,
+.widget li {
     font-weight: 600;
 }
+
 input,
 textarea {
     margin-bottom: 15px;
@@ -187,8 +214,6 @@ textarea {
     color: #000000;
 }
 
-
-
 button[type="submit"] {
     background-color: #1a1a1a;
     font-size: 0.9rem;
@@ -199,30 +224,38 @@ button[type="submit"] {
     margin-bottom: 30px;
     padding: 12px 18px;
 }
-input{
+
+input {
     width: 90%;
     border-radius: 5px;
 }
+
 button[type="submit"]:hover {
     background-color: #dc6520;
 }
 
-#searchBox{
+/* I don't know about the search button, Sorry🥲🥲🥲*/
+
+#searchBox {
     margin-top: 15px;
     display: inline-block;
     /* width: 70%; */
 }
-#searchButton img{
-    width:500% ;
+
+#searchButton img {
+    width: 500%;
     align-items: center;
     margin-left: -5px;
 }
-#searchButton{
+
+#searchButton {
     display: inline-block;
     margin-left: -10%;
     width: 15%;
+    height: 100%;
     height: fit-content;
 }
-.widget a{
+
+.widget a {
     text-decoration: none;
 }
